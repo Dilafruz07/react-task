@@ -1,15 +1,15 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, View, Image,Text,StyleSheet,} from 'react-native';
+import { SafeAreaView, ScrollView, View, Image,Text,StyleSheet} from 'react-native';
 
-function App(){
+export function App(){
   return(
     <SafeAreaView style={styles.area}>
       <ScrollView style={{flex:1}}>
         <View style={styles.header}>
-          <Image source={require('./assets/icons/Menu.png')}/>
+          <Image source={require('./assets/MenuIcon.png')}/>
         <View style={{flexDirection:'row',alignItems:'center'}}>
-          <Image source={require('./assets/icons/searching.png')} style={{marginRight:24}}/>
-        <Image source={require('./assets/icons/shopping.png')}/>  
+          <Image source={require('./assets/search.png')} style={{marginRight:24}}/>
+        <Image source={require('./assets/shopping.png')}/>  
         </View>  
         </View>
         <View style={styles.topics}>
@@ -17,27 +17,27 @@ function App(){
           <Text style={styles.topicsText2}>AT YOUR DOOR STEPS</Text>
         </View>
         <View style={styles.icon}>
-          <Image source={require('./assets/icons/allFood.png')} style={{borderWidth:5,marginTop:47,marginLeft:20}}/>
-          <Image source={require('./assets/icons/Rice.png')} style={{marginTop:47}}/>
-          <Image source={require('./assets/icons/fast.png')} style={{marginTop:47}}/>
-          <Image source={require('./assets/icons/drinks.png')} style={{marginTop:47,marginLeft:47}}/>
+          <Image source={require('./assets/allFood.png')} style={{borderWidth:5,marginTop:47,marginLeft:20}}/>
+          <Image source={require('./assets/Rice.png')} style={{marginTop:47}}/>
+          <Image source={require('./assets/fast.png')} style={{marginTop:47}}/>
+          <Image source={require('./assets/drinks.png')} style={{marginTop:47,marginLeft:47}}/>
         </View>
         <View style={styles.image}>
-          <Image source={require('./assets/images/Rice.png')}/>
-          <Image style={{marginLeft:20}} source={require('./assets/images/Zinger.png')}/>
+          <Image source={require('./images/Ricec.png')}/>
+          <Image style={{marginLeft:20}} source={require('./images/Zinger.png')}/>
         </View>
         <View style={styles.Text}>
           <Text style={styles.Text1}>Popular</Text>
           <Text style={styles.Text2}>Now</Text>
         </View>
         <View style={styles.footer}>
-          <Image style={{marginHorizontal:8,marginVertical:5}} source={require('./assets/images/Rectangle.png')}/>
+          <Image style={{marginHorizontal:8,marginVertical:5}} source={require('./images/Rectangle.png')}/>
           <View style={styles.footerText}>
           <Text style={styles.footerText1}>Chicken Manchurian</Text>
           <Text>Chinese Cuisine</Text> 
           <View style={styles.footicon2}>
-          <Text style={styles.footText2}>$110.50</Text>
-          <Image style={styles.footicon} source={require('./assets/images/Vector.png')}/>
+          <Text style={styles.footText2}>{'$110.50'}</Text>
+          <Image style={styles.footicon} source={require('./images/Vector.png')}/>
           </View>
           </View>
         </View>
@@ -47,7 +47,6 @@ function App(){
     </SafeAreaView>
   )
 }
-export default App
 
 const styles=StyleSheet.create({
   area:{
