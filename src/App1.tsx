@@ -41,11 +41,11 @@ export function App(){
             </View>
             <View style={styles.simage}>
                 <Text style={styles.text1}>
-                    Astroph
+                    Astrophyutum
                 </Text>
                 <Image source={require('./kaktus/image9.png')}/>
                 <Text style={styles.text2}>
-                    $242.
+                    $242.00
                 </Text>
             </View>
             </ScrollView>
@@ -139,10 +139,10 @@ const styles= StyleSheet.create({
         backgroundColor:'#F1F4FB',
         marginLeft:60,
         marginTop:50,
-        paddingTop:60,
+        paddingTop:30,
         borderRadius:25,
-        height:400,
-        width:100
+        height:360,
+        width:190
     },
     text1:{
 
